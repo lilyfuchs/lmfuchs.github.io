@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
-  max-height: 100%;
+  max-width: 100%;
 }
 
 *,
@@ -20,29 +20,91 @@ body {
   box-sizing: inherit;
 }
 
-/* End basic Styles */
-
 img {
   width: 100%;
   height: auto;
   display: block;
 }
+/* End basic Styles */
 
-p {
-  color: purple;
+/* Begin Hero Styles */
+.hero-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 100%;
 }
 
-.myColor {
-  color: red;
-  font-size: 58px;
+.hero-image-box {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
-.myColorTwo {
+.hero-image-box ::after {
+  content: "";
+  height: 100%;
+  width: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  line-height: 3rem;
   color: pink;
-  font-size: 87px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
-h1 {
-  color: blue;
+.hero-text {
+  font-size: 2rem;
+  color: red;
+}
+
+/* Media Queries Below*/
+
+@media (min-width: 600px) {
+  .hero-heading {
+    color: pink;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  line-height: 2.5;
+}
+
+@media (min-width: 920px) {
+  .hero-heading {
+    color: pink;
+    font-size: 9rem;
+    line-height: 9rem;
+  }
 }
