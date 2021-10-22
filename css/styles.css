@@ -61,7 +61,8 @@ img {
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-text-box {
@@ -105,6 +106,6 @@ img {
   .hero-heading {
     color: pink;
     font-size: 9rem;
-    line-height: 9rem;
+    line-height: 7rem;
   }
 }
