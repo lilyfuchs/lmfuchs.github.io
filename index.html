@@ -6,85 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
     <header class="hero-box">
       <section class="hero-image-box">
-        <img
+        <!--<img
           class="hero-image"
           src="img/chis-sweet-home-cat.gif"
           alt="Cute cat on keyboard."
-        />
+        /> -->
+        <video
+          src="video/IMG-3812.mp4"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+        ></video>
       </section>
       <section class="hero-text-box">
         <h1 class="hero-heading">Awesome Pumpkins</h1>
         <p class="hero-text">I have a class and am Red</p>
       </section>
     </header>
-    <section class= "portfolio-container">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/images/pattern.jpg"
+            data-glightbox="pattern of raindbow triangles in a spiral"
+          >
+            <img
+              class="gallery-img"
+              src="img/images/2d design.jpg"
+              alt="group pattern project made in 2D Desgin"
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/images/20211112 Fuchs Lily Finished RTA Project.jpg"
+            data-glightbox="Holiday RTA bus adverstisement: Christmas tree, Menorah, Happy Holidays, Kwanzaaa, and New Years. "
+          >
+            <img
+              class="gallery-img"
+              src="img/images/20211022 Fuchs Lily CIA Logo Project.jpg"
+              alt="Halloween-themed Cleveland Institue of Art Logo: gravestones with hands reaching up from the ground."
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/images/drawing of fishman.jpg"
+            data-glightbox="Illustration of a fish man at different angles."
+          >
+            <img
+              class="gallery-img"
+              src="img/images/sculpture.jpg"
+              alt="Clay sculpture of a fish-like torso."
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/images/obs drawing.jpg"
+            data-glightbox="Observational Drawing of things on my desk."
+          >
+            <img
+              class="gallery-img"
+              src="img/images/IMG-4541.jpg"
+              alt="Sketch of benches perched together."
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="" data-glightbox="">
+            <img class="gallery-img" src="" alt=""
+          /></a>
+        </div>
+
+        <div class="gallery-item">
+          <a class="glightbox" href="" data-glightbox="t">
+            <img class="gallery-img" src="" alt=""
+          /></a>
+        </div>
+      </section>
+    </section>
+    <h1>Foundation Portfolio</h1>
     <section class="portfolio-gallery">
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-3999 (1).jpg" data-glightbox= "title: tree; description: vines growing from the tree down the mountain">
-          <img
-            class="gallery-img"
-            src="img/IMG-3999 (1).jpg" 
-            alt="an image of a tree with vines growing down a mountain"
-        /></a>
-      </div>
+      <!-- Begin About Section -->
+      <section classs="about-container">
+        <section class="about-text">
+          <h1>Lily is like a flower</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic,
+            sed beatae voluptates et culpa dolores quis laudantium quasi
+            cupiditate esse earum vero dolor odit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus temporibus quis dolores eveniet qui, ipsum tempore
+            consequatur.
+          </p>
+          <p>
+            <a href="mailto:lmfuchs@student.cia.edu">Email Lily</a> at
+            lmfuchs@student.cia.edu
+          </p>
+        </section>
+        <section class="about=social">
+          <a
+            href="https://instagram.com/lily.mae1212"
+            aria-label="Link to Instagram"
+            ><i class="fab fa-instagram" aria-hidden="true"></i
+          ></a>
 
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-3515.jpg" data-glightbox= "title: plum; description: delicious plum cut in half">
-          <img
-            class="gallery-img"
-            src="img/IMG-3515.jpg"
-            alt="image of hand holding an opened plum"
-        /></a>
-      </div>
-
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-3779.jpg" data-glightbox= "title: sleepy cat; description: sleepy ginger cat resting on bed">
-          <img
-            class="gallery-img"
-            src="img/IMG-3779.jpg"
-            alt="an image of a ginger cat sitting in its cat bed"
-        /></a>
-      </div>
-
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-4777.jpg" data-glightbox= "title: bee and flower; description: bee pollunating a flower">
-          <img
-            class="gallery-img"
-            src="img/IMG-4777.jpg"
-            alt="an image of a bee on a yellow and orange flower"
-        /></a>
-      </div>
-
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-4862.JPG" data-glightbox= "title: Jane; description: my cat Jane looking out the window">
-          <img
-            class="gallery-img"
-            src="img/IMG-4862.JPG"
-            alt="an image of a black cat looking out of the window"
-        /></a>
-      </div>
-
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG-4863.JPG" data-glightbox= "title: Ringo; description: my corgi Ringo being playful">
-          <img
-            class="gallery-img"
-            src="img/IMG-4863.JPG"
-            alt="an image of a corgi closely looking at the camera"
-        /></a>
-      </div>
+          <a
+            href="https://snapchat.com/lily_mae1479"
+            aria-label="Link to Snapchat"
+            ><i class="fab fa-snapchat" aria-hidden="true"></i
+          ></a>
+        </section>
+      </section>
+      <section class="about-image">
+        <img src="img/IMG-3999.jpg" alt="Profile pic" />
+      </section>
     </section>
-    </section>
+
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
-    const lightbox = GLightbox ({ loop: true});
-
+      const lightbox = GLightbox({ loop: true });
     </script>
   </body>
 </html>
-</section>
